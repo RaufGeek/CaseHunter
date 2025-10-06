@@ -159,18 +159,6 @@ app.url_map.strict_slashes = False
 
 bot = TeleBot(BOT_TOKEN, threaded=False) if BOT_TOKEN else None
 
-# CORS для всего (dev)
-@app.after_request
-def add_cors_headers(resp):
-    resp.headers['Access-Control-Allow-Origin'] = '*'
-    resp.headers['Access-Control-Allow-Headers'] = 'Content-Type, Authorization'
-    resp.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
-    return resp
-
-@app.route('/api/<path:_path>', methods=['OPTIONS'])
-def any_options(_path):
-    return ('', 200)
-
 def get_next_id(group):
     counter_key = f"{group}_counter"
     current = db.get("counters", counter_key)
@@ -1019,7 +1007,7 @@ cases_data = [
       }
     ]
   },
-  {
+{
     "id": "black_only_case",
     "name": "Black Only",
     "stars_price": 4000,
@@ -1028,92 +1016,110 @@ cases_data = [
       {
         "name": "Plush Pepe",
         "probability": 1e-06,
-        "img_url": "https://images.casehunter.sbs/PlushPepe.png"
+        "img_url": "https://images.casehunter.sbs/PlushPepeEmeraldPlush.png",
+        "price_stars": 3250000
       },
       {
         "name": "Durov's Cap",
         "probability": 5e-06,
-        "img_url": "https://images.casehunter.sbs/Durov'sCap.png"
+        "img_url": "https://images.casehunter.sbs/DurovsCapCaptain.png",
+        "price_stars": 1000000
       },
       {
         "name": "Precious Peach",
         "probability": 1e-05,
-        "img_url": "https://images.casehunter.sbs/PreciousPeach.png"
+        "img_url": "https://images.casehunter.sbs/PreciousPeachClearSky.png",
+        "price_stars": 500000
       },
       {
         "name": "Nail Bracelet",
         "probability": 5e-05,
-        "img_url": "https://images.casehunter.sbs/NailBracelet.png"
+        "img_url": "https://images.casehunter.sbs/NailBraceletNeonTube.png",
+        "price_stars": 75000
       },
       {
         "name": "Astral Shard",
         "probability": 0.0001,
-        "img_url": "https://images.casehunter.sbs/AstralShard.png"
+        "img_url": "https://images.casehunter.sbs/AstralShardUranium.png",
+        "price_stars": 125000
       },
       {
         "name": "Perfume Bottle",
         "probability": 0.0005,
-        "img_url": "https://images.casehunter.sbs/PerfumeBottle.png"
+        "img_url": "https://images.casehunter.sbs/PerfumeBottlePlumCloud.png",
+        "price_stars": 250000
       },
       {
         "name": "Swiss Watch",
         "probability": 0.001,
-        "img_url": "https://images.casehunter.sbs/SwissWatch.png"
+        "img_url": "https://images.casehunter.sbs/SwissWatchDayTrader.png",
+        "price_stars": 75000
       },
       {
         "name": "Vintage Cigar",
         "probability": 0.001,
-        "img_url": "https://images.casehunter.sbs/VintageCigar.png"
+        "img_url": "https://images.casehunter.sbs/VintageCigarPinkPanther.png",
+        "price_stars": 25000
       },
       {
         "name": "Sharp Tongue",
         "probability": 0.002,
-        "img_url": "https://images.casehunter.sbs/SharpTongue.png"
+        "img_url": "https://images.casehunter.sbs/SharpTongueSuccubus.png",
+        "price_stars": 50000
       },
       {
         "name": "Electric Skull",
         "probability": 0.002,
-        "img_url": "https://images.casehunter.sbs/ElectricSkull.png"
+        "img_url": "https://images.casehunter.sbs/ElectricSkullHellfire.png",
+        "price_stars": 50000
       },
       {
         "name": "Record Player",
         "probability": 0.05,
-        "img_url": "https://images.casehunter.sbs/RecordPlayer.png"
+        "img_url": "https://images.casehunter.sbs/RecordPlayerIlluminati.png",
+        "price_stars": 8250
       },
       {
         "name": "Voodoo Doll",
         "probability": 0.05,
-        "img_url": "https://images.casehunter.sbs/VoodooDoll.png"
+        "img_url": "https://images.casehunter.sbs/VoodooDollAquaGem.png",
+        "price_stars": 25000
       },
       {
         "name": "Top Hat",
         "probability": 0.05,
-        "img_url": "https://images.casehunter.sbs/TopHat.png"
+        "img_url": "https://images.casehunter.sbs/TopHatCardinal.png",
+        "price_stars": 15750
       },
       {
         "name": "Skull Flower",
         "probability": 0.1,
-        "img_url": "https://images.casehunter.sbs/SkullFlower.png"
+        "img_url": "https://images.casehunter.sbs/SkullFlowerGhostRider.png",
+        "price_stars": 10000
       },
       {
         "name": "Spy Agaric",
         "probability": 0.1,
-        "img_url": "https://images.casehunter.sbs/SpyAgaric.png"
+        "img_url": "https://images.casehunter.sbs/SpyAgaricWizardCap.png",
+        "price_stars": 5500
       },
       {
         "name": "Hypno Lollipop",
         "probability": 0.2,
-        "img_url": "https://images.casehunter.sbs/HypnoLollipop.png"
+        "img_url": "https://images.casehunter.sbs/HypnoLollipopLucipop.png",
+        "price_stars": 3000
       },
       {
         "name": "Desk Calendar",
         "probability": 0.193334,
-        "img_url": "https://images.casehunter.sbs/DeskCalendar.png"
+        "img_url": "https://images.casehunter.sbs/DeskCalendarPepePlans.png",
+        "price_stars": 2500
       },
       {
         "name": "Lol Pop",
         "probability": 0.25,
-        "img_url": "https://images.casehunter.sbs/LolPop.png"
+        "img_url": "https://images.casehunter.sbs/LolPopMirage.png",
+        "price_stars": 2250
       }
     ]
   },

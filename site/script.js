@@ -1,71 +1,77 @@
-// === DEV ===
-const IS_DEV = /^(localhost|127\.0\.0\.1|::1)$/.test(location.hostname);
-const API_BASE_URL = IS_DEV ? 'http://localhost:5000' : 'https://casehunter.sbs';
+// <<<<<<< HEAD
+// // === DEV ===
+// const IS_DEV = /^(localhost|127\.0\.0\.1|::1)$/.test(location.hostname);
+// const API_BASE_URL = IS_DEV ? 'http://localhost:5000' : 'https://casehunter.sbs';
 
-// отключаем искусственную ошибку, чтобы не ломать UI в дев-режиме
-window.DEV_INJECT_BAD_PRIZE = false;
+// // отключаем искусственную ошибку, чтобы не ломать UI в дев-режиме
+// window.DEV_INJECT_BAD_PRIZE = false;
 
-// dev-заглушки Telegram, только в локалке
-(function ensureTelegramForDev() {
-    if (!IS_DEV) return;
-    window.Telegram ??= {};
-    Telegram.WebApp ??= {};
-    const tg = Telegram.WebApp;
-    tg.initDataUnsafe ??= {
-        user: { id: 12345, username: 'dev_user', first_name: 'Dev' },
-        hash: 'dev-hash'
-    };
-    tg.ready ??= function () { };
-    tg.expand ??= function () { };
-    tg.HapticFeedback ??= { impactOccurred() { }, notificationOccurred() { }, selectionChanged() { } };
-    tg.MainButton ??= { setText() { }, show() { }, hide() { }, onClick() { } };
+// // dev-заглушки Telegram, только в локалке
+// (function ensureTelegramForDev() {
+//     if (!IS_DEV) return;
+//     window.Telegram ??= {};
+//     Telegram.WebApp ??= {};
+//     const tg = Telegram.WebApp;
+//     tg.initDataUnsafe ??= {
+//         user: { id: 12345, username: 'dev_user', first_name: 'Dev' },
+//         hash: 'dev-hash'
+//     };
+//     tg.ready ??= function () { };
+//     tg.expand ??= function () { };
+//     tg.HapticFeedback ??= { impactOccurred() { }, notificationOccurred() { }, selectionChanged() { } };
+//     tg.MainButton ??= { setText() { }, show() { }, hide() { }, onClick() { } };
 
-    // если нет локальной авторизации — создаём заглушку;
-    // НИЧЕГО не очищаем, чтобы не сбивать твой initializeApp()
-    if (!localStorage.getItem('auth_data')) {
-        localStorage.setItem('auth_data', 'DEV_AUTH_PAYLOAD');
-    }
-})();
+//     // если нет локальной авторизации — создаём заглушку;
+//     // НИЧЕГО не очищаем, чтобы не сбивать твой initializeApp()
+//     if (!localStorage.getItem('auth_data')) {
+//         localStorage.setItem('auth_data', 'DEV_AUTH_PAYLOAD');
+//     }
+// })();
 
-// === DEV bootstrap: получить реальный auth_data и выдать тестовый баланс ===
-async function ensureAuthData() {
-    let auth = localStorage.getItem('auth_data');
-    if (!auth || auth === 'DEV_AUTH_PAYLOAD') {
-        const uid = (window.Telegram?.WebApp?.initDataUnsafe?.user?.id) || 12345;
-        const r = await fetch(`${API_BASE_URL}/api/GenerateLoginHash`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ user_id: uid })
-        });
-        const j = await r.json();
-        if (j.status !== 'success' || !j.auth_data) throw new Error('GenerateLoginHash failed');
-        auth = j.auth_data;
-        localStorage.setItem('auth_data', auth);
-    }
-    return auth;
-}
+// // === DEV bootstrap: получить реальный auth_data и выдать тестовый баланс ===
+// async function ensureAuthData() {
+//     let auth = localStorage.getItem('auth_data');
+//     if (!auth || auth === 'DEV_AUTH_PAYLOAD') {
+//         const uid = (window.Telegram?.WebApp?.initDataUnsafe?.user?.id) || 12345;
+//         const r = await fetch(`${API_BASE_URL}/api/GenerateLoginHash`, {
+//             method: 'POST',
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify({ user_id: uid })
+//         });
+//         const j = await r.json();
+//         if (j.status !== 'success' || !j.auth_data) throw new Error('GenerateLoginHash failed');
+//         auth = j.auth_data;
+//         localStorage.setItem('auth_data', auth);
+//     }
+//     return auth;
+// }
 
-// вызовем dev-только пополнение (см. эндпоинт ниже)
-async function devTopUpStars(amount = 100000) {
-    const auth = await ensureAuthData();
-    await fetch(`${API_BASE_URL}/api/dev_topup_stars`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ auth_data: auth, amount })
-    });
-}
+// // вызовем dev-только пополнение (см. эндпоинт ниже)
+// async function devTopUpStars(amount = 100000) {
+//     const auth = await ensureAuthData();
+//     await fetch(`${API_BASE_URL}/api/dev_topup_stars`, {
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify({ auth_data: auth, amount })
+//     });
+// }
 
-// единый dev-старт
-async function devBootstrapAuthAndBalance() {
-    if (!/^(localhost|127\.0\.0\.1|::1)$/.test(location.hostname)) return; // только локалка
-    await ensureAuthData();
-    await devTopUpStars(100000); // поднимем баланс до 100k ⭐
-}
+// // единый dev-старт
+// async function devBootstrapAuthAndBalance() {
+//     if (!/^(localhost|127\.0\.0\.1|::1)$/.test(location.hostname)) return; // только локалка
+//     await ensureAuthData();
+//     await devTopUpStars(100000); // поднимем баланс до 100k ⭐
+// }
 
-// где-то в старте приложения ДО любых open_case:
-devBootstrapAuthAndBalance().catch(console.error);
+// // где-то в старте приложения ДО любых open_case:
+// devBootstrapAuthAndBalance().catch(console.error);
 
 
+
+
+// Global Constants and Data Definitions
+const IMAGE_BASE_URL = 'https://images.casehunter.sbs/';
+const API_BASE_URL = 'https://casehunter.sbs';
 
 const BOT_USERNAME = 'Hunter_Case_bot';
 const TON_TO_STARS_RATE = 250;
@@ -1790,20 +1796,6 @@ async function spinRoulette() {
             x: selectedCaseMultiplier
         });
 
-        // ===== DEV-инъекция «плохого» приза (Только для теста!) =====
-        if (IS_DEV && window.DEV_INJECT_BAD_PRIZE) {
-            // намеренно подсовываем приз, которого нет в пуле выбранного кейса
-            result.status = result.status || 'success';
-            result.won_prizes = [
-                { name: 'Record Player', stars_price: 2275, img_url: 'https://images.casehunter.sbs/Record%20Player.png' },
-                { name: 'Top Hat Cardinal', stars_price: 1900, img_url: '' },
-                { name: 'Snoop Dogg', stars_price: 400, img_url: '' },
-            ].slice(0, selectedCaseMultiplier);
-            console.log('[DEV] Injected bad prize set:', result.won_prizes);
-        }
-        // ===== конец DEV-инъекции =====
-
-
         if (result.status !== 'success' || !result.won_prizes || !result.won_prizes.length) {
             throw new Error(result.error || 'Не удалось получить выигрыш с сервера.');
         }
@@ -1814,63 +1806,20 @@ async function spinRoulette() {
             updateModalBalanceDisplay();
         }
 
-        // --- НАЧАЛО: ЖЁСТКАЯ ВАЛИДАЦИЯ ВЫИГРЫШЕЙ ПО ПУЛУ ТЕКУЩЕГО КЕЙСА ---
+        // --- ИЗМЕНЕНИЕ ЗДЕСЬ ---
+        const processedPrizes = result.won_prizes.map((prize, index) => {
+            // Ищем данные оригинального приза из настроек кейса по имени
+            const originalPrizeData = currentOpenCaseOrSlot.prizes.find(p => p.name === prize.name);
 
-        // допустимые призы этого кейса (для быстрого доступа по имени)
-        const allowedMap = new Map((currentOpenCaseOrSlot.prizes || []).map(p => [p.name, p]));
+            // Если нашли, используем его ссылку на картинку. Если нет, генерируем (как запасной вариант).
 
-        // берём из ответа сервера столько призов, сколько круток
-        let wins = (result.won_prizes || []).slice(0, selectedCaseMultiplier);
-
-        // помечаем «чужие» призы
-        const badIdx = [];
-        wins = wins.map((w, i) => {
-            if (!w || !allowedMap.has(w.name)) { badIdx.push(i); return null; }
-            return w;
-        });
-
-        // подменяем «чужие» призы корректными из пула кейса (по probability/равномерно)
-        if (badIdx.length) {
-            const replacements = pickPrizesFromCase(currentOpenCaseOrSlot.prizes, badIdx.length);
-            badIdx.forEach((idx, i) => {
-                const p = replacements[i] || currentOpenCaseOrSlot.prizes[0];
-                wins[idx] = {
-                    name: p.name,
-                    img_url: p.img_url || p.imageFilename || generateImageFilename(p.name),
-                    stars_price: p.price_stars || 0
-                };
-            });
-        }
-
-        // формируем объекты для UI ТОЛЬКО на базе валидированных wins
-        const processedPrizes = wins.map((prize, index) => {
-            const orig = allowedMap.get(prize.name) || {};
             return {
                 ...prize,
                 id: prize.id || (Date.now() + index),
-                // приоритет: картинка из кейса → из ответа → сгенерированная по имени
-                imageFilename: orig.img_url || orig.imageFilename || prize.img_url || generateImageFilename(prize.name),
+                imageFilename: prize.img_url,
                 currentValue: (prize.stars_price || 0) / TON_TO_STARS_RATE
             };
         });
-
-        // --- КОНЕЦ: ЖЁСТКАЯ ВАЛИДАЦИЯ ВЫИГРЫШЕЙ ---
-
-
-        // // --- ИЗМЕНЕНИЕ ЗДЕСЬ ---
-        // const processedPrizes = result.won_prizes.map((prize, index) => {
-        //     // Ищем данные оригинального приза из настроек кейса по имени
-        //     const originalPrizeData = currentOpenCaseOrSlot.prizes.find(p => p.name === prize.name);
-
-        //     // Если нашли, используем его ссылку на картинку. Если нет, генерируем (как запасной вариант).
-
-        //     return {
-        //         ...prize,
-        //         id: prize.id || (Date.now() + index),
-        //         imageFilename: prize.img_url,
-        //         currentValue: (prize.stars_price || 0) / TON_TO_STARS_RATE
-        //     };
-        // });
         // --- КОНЕЦ ИЗМЕНЕНИЯ ---
 
         const allReelContainers = [rouletteReel1, rouletteReel2, rouletteReel3];
