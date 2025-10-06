@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>CASE HUNTER</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSDGWEGLR0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MSDGWEGLR0');
+    </script>
+</head>
+<body>
+    <div id="loading-screen">
+        <img src="https://images.casehunter.sbs/BackgroundEraser_20250831_184845312.png" alt="Case Hunter Logo" class="loading-logo">
+        <div class="loading-title">CASE HUNTER</div>
+        <div class="loader"></div>
+        <p id="loading-status" class="loading-status-text">Loading user data...</p>
+        <div class="channel-link-container">
+            <a href="https://t.me/CaseHunterNews" target="_blank">@casehunter</a>
+        </div>
+    </div>
+    <div id="app-container">
+        <header id="app-header">
+            <div class="app-title-container">
+                <img src="https://images.casehunter.sbs/BackgroundEraser_20250831_184845312.png" alt="Case Hunter Logo" class="app-logo">
+                <div class="app-title">Case Hunter</div>
+            </div>
+            <div class="wallet-info">
+                <div id="balance">
+                    <img src="https://images.casehunter.sbs/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png" alt="Star" class="balance-icon">
+                    <span id="star-balance">0</span>
+                </div>
+                <div id="header-avatar" class="header-avatar-placeholder"></div>
+            </div>
+        </header>
+
+        <main id="app-content">
+            <div id="main-page" class="page active">
+                <div id="banner-carousel" class="banner-carousel">
+                    <div class="banner-slides">
+                        <!-- Banner slides will be injected here by JavaScript -->
+                    </div>
+                    <div class="banner-pagination">
+                        <!-- Pagination dots will be injected here by JavaScript -->
+                    </div>
+                </div>
+                <h2>Кейсы</h2>
+                <div id="cases-grid-regular" class="cases-grid">
+                    <!-- Regular animated cases will be rendered here by JavaScript -->
+                </div>
+                <h3 style="margin-top: 32px; margin-bottom: 20px;">Бесплатные</h3>
+                <div id="cases-grid-free" class="cases-grid">
+                    <!-- The free daily case will be rendered here -->
+                </div>
+                <h3 style="margin-top: 32px; margin-bottom: 20px;">Лимитированные</h3>
+                <div id="cases-grid-limited" class="cases-grid">
+                    <!-- Limited image-based cases will be rendered here by JavaScript -->
+                </div>
+            </div>
+
+            <div id="upgrade-page" class="page">
+                <h2>Апгрейд</h2>
+                <div class="content-card">
+                    <div id="upgrade-selection-area">
+                        <div class="upgrade-item-slot" id="selected-inventory-item-slot" data-type="inventory">
+                            <div class="slot-placeholder">
+                                <svg class="plus-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>
+                                <span>Выберите ваш предмет</span>
+                            </div>
+                            <div class="slot-item-display" style="display: none;">
+                                <img src="" alt="Selected Item">
+                                <p class="slot-item-name">Item Name</p>
+                                <p class="slot-item-value">0.00 TON</p>
+                            </div>
+                        </div>
+                        <div class="upgrade-arrow-connector">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" /></svg>
+                        </div>
+                        <div class="upgrade-item-slot" id="desired-upgrade-item-slot" data-type="desired">
+                            <div class="slot-placeholder">
+                                <svg class="plus-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>
+                                <span>Выберите желаемый NFT</span>
+                            </div>
+                            <div class="slot-item-display" style="display: none;">
+                                <img src="" alt="Desired Item">
+                                <p class="slot-item-name">Item Name</p>
+                                <p class="slot-item-value">0.00 TON</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="upgrade-picker-container" style="display: none;">
+                        <h4 id="upgrade-picker-title">Select Your Item</h4>
+                        <div id="upgrade-items-grid" class="inventory-grid" style="max-height: 250px; overflow-y: auto; margin-bottom: 15px;">
+                            <!-- Items will be populated here by JS -->
+                        </div>
+                        <button id="close-upgrade-picker-button" class="button button-secondary">Close Picker</button>
+                    </div>
+
+                    <div id="upgrade-chance-display-container-new">
+                        <span id="upgrade-chance-text-left" class="chance-display-text">0%</span>
+                        <div id="upgrade-chance-circle-new">
+                            <img src="https://images.casehunter.sbs/RestrictedGifts_AgADvhkAAkoFcFM.png?raw=true" alt="Upgrade Mascot" class="upgrade-mascot-image">
+                            <div id="upgrade-chance-pointer-new"></div>
+                        </div>
+                        <span id="upgrade-multiplier-text-right" class="chance-display-text">0x</span>
+                    </div>
+
+                    <!-- ИЗМЕНЕНИЕ: ОБНОВЛЕН ТЕКСТ КНОПКИ -->
+                    <button id="do-upgrade-button" class="button" disabled>Выберете предмет для апгрейда</button>
+                </div>
+            </div>
+
+            <!-- ИЗМЕНЕНИЕ: ОБНОВЛЕН БЛОК РЕФЕРАЛОВ -->
+            <div id="invite-page" class="page">
+                <h2>Рефералы</h2>
+                <div class="content-card">
+                    <p>Приглашайте друзей и зарабатывайте 5 звезд за каждого друга + 10% от его депозитов!</p>
+                    <input type="text" id="referral-link" value="Loading..." readonly>
+                    <button id="copy-ref-link-button" class="button">Copy Code</button>
+                    <div class="stats-box">
+                        <div class="stat-item">
+                            <div id="referral-balance" class="value">
+                                0 <img src="https://images.casehunter.sbs/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png" class="balance-icon" style="width: 1em; height: 1em; vertical-align: text-bottom;">
+                            </div>
+                            <div class="label">Earnings</div>
+                        </div>
+                        <div class="stat-item">
+                            <div id="invited-count" class="value">0</div>
+                            <div class="label">Invited</div>
+                        </div>
+                    </div>
+                    <button id="withdraw-referral-button" class="button button-secondary">Вывести на баланс</button>
+                </div>
+                <div class="content-card">
+                    <h3>Invited Friends</h3>
+                    <div id="invited-users-list-display" class="invited-users-list"><p>No friends invited yet.</p></div>
+                </div>
+            </div>
+
+            <div id="leaderboard-page" class="page"><h2>Leaderboard</h2><div id="leaderboard-list" class="leaderboard-list content-card" style="padding-top:0; padding-bottom:0;"></div></div>
+
+            <div id="profile-page" class="page">
+                <div class="profile-header">
+                    <div id="profile-avatar" class="profile-avatar-placeholder"></div>
+                    <div class="profile-info">
+                        <div id="profile-username" class="username">User</div>
+                        <div id="profile-userid" class="userid">#...</div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>Balance</h3>
+                    <div id="profile-balance-display" style="display: flex; align-items: center; justify-content: center;">
+                         <!-- JS будет управлять этим элементом -->
+                    </div>
+                    <!-- ИЗМЕНЕНИЕ: ОБНОВЛЕН PLACEHOLDER -->
+                    <input type="number" id="deposit-amount-input" placeholder="Сумма (минимум 50 звёзд)">
+
+                    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+                        <button id="initiate-deposit-stars-button" class="button" style="flex-grow: 1;">Депозит Stars</button>
+                        <!-- ИЗМЕНЕНИЕ: КНОПКА TON СДЕЛАЛА СЕРОЙ И НЕАКТИВНОЙ С ЧАСАМИ -->
+                        <button id="initiate-deposit-ton-button" class="button button-secondary" style="flex-grow: 1; cursor: not-allowed;" disabled>Депозит TON &#x23F0;</button>
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <button id="initiate-deposit-gifts-button" class="button">Депозит Подарками</button>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>Promocode</h3>
+                    <!-- ИЗМЕНЕНИЕ: ОБНОВЛЕН ТЕКСТ КНОПКИ -->
+                    <div class="promocode-input-group">
+                        <input type="text" id="promocode-input" placeholder="Enter code">
+                        <button id="redeem-promocode-button" class="button button-secondary">Активировать</button>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>Support</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 15px; font-size: 0.9em;">
+                        Have questions or need help? Contact our support team on Telegram.
+                    </p>
+                    <button id="support-button" class="button">Contact Support</button>
+                </div>
+
+                <div class="content-card">
+                    <h3>My Collection (<span id="inventory-count">0</span>)</h3>
+                    <div id="inventory-grid" class="inventory-grid">
+                        <p id="empty-inventory-message" style="grid-column: 1 / -1; text-align: center; color: var(--text-placeholder); padding:15px 0;">Your collection is empty.</p>
+                    </div>
+                    <!-- ИЗМЕНЕНИЕ: ОБНОВЛЕН ТЕКСТ КНОПКИ -->
+                    <button id="sell-all-button" class="button" style="display: none;">Продать все за <span id="sell-all-value">0</span> <img src="https://images.casehunter.sbs/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png" alt="Star" class="balance-icon" style="width: 16px; height: 16px;"></button>
+                </div>
+            </div>
+        </main>
+
+
+        <nav id="app-nav">
+            <button class="nav-button active" data-page="main-page"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Games</button>
+            <button class="nav-button" data-page="upgrade-page">
+                <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1">
+                  <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                  <path d="M7.41 11.41L12 6.83l4.59 4.58L18 10l-6-6-6 6z"/>
+                  <path d="M7.41 7.41L12 2.83l4.59 4.58L18 6l-6-6-6 6z"/>
+                </svg>Upgrade
+            </button>
+            <button class="nav-button" data-page="invite-page"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>Referrals</button>
+            <button class="nav-button" data-page="leaderboard-page"><svg viewBox="0 0 24 24"><path d="M16,1H4C2.89,1 2,1.89 2,3V17H4V3H16V1M16.5,5H7.5C6.67,5 6,5.67 6,6.5V22.5L12,19.5L18,22.5V6.5C18,5.67 17.33,5 16.5,5M14,11H10V9H14V11M14,15H10V13H14V15Z"/></svg>Leaders</button>
+            <button class="nav-button" data-page="profile-page"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>Profile</button>
+        </nav>
+    </div>
+
+    <div id="roulette-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="roulette-case-name">Opening Case...</h3>
+                <div id="roulette-modal-balance-display">
+                    <div class="balance-label">Balance</div>
+                    <div class="balance-value-line">
+                        <span id="roulette-modal-balance-value">0</span>
+                        <img src="https://images.casehunter.sbs/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png" alt="Star" class="balance-icon">
+                    </div>
+                </div>
+            </div>
+
+            <div id="roulette-wheel-container">
+                <div class="roulette-individual-reel-row-visual" id="roulette-reel-1">
+                    <div class="roulette-spinner-reel"></div>
+                </div>
+                <div class="roulette-individual-reel-row-visual" id="roulette-reel-2">
+                    <div class="roulette-spinner-reel"></div>
+                </div>
+                <div class="roulette-individual-reel-row-visual" id="roulette-reel-3">
+                    <div class="roulette-spinner-reel"></div>
+                </div>
+            </div>
+
+            <div class="case-multiplier-selector">
+                <button class="button button-secondary active-multiplier" data-multiplier="1">1x</button>
+                <button class="button button-secondary" data-multiplier="2">2x</button>
+                <button class="button button-secondary" data-multiplier="3">3x</button>
+            </div>
+            <div class="modal-actions">
+                <button id="spin-button" class="button">Spin</button>
+                <button id="close-roulette-button" class="button button-secondary">Close</button>
+            </div>
+            <hr><h4>Possible Prizes in this Case:</h4><div id="possible-prizes-display"></div>
+        </div>
+    </div>
+
+    <div id="win-overlay-modal" class="modal">
+        <div class="modal-content">
+            <div id="win-overlay-prize-image"></div>
+            <div id="win-overlay-prize-name">You Won: Item!</div>
+            <div id="win-overlay-prize-details"></div>
+            <div class="win-overlay-actions modal-actions">
+                <button id="win-overlay-claim-button" class="button">Забрать</button>
+                <button id="win-overlay-sell-button" class="button button-secondary">Продать все</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="upgrade-result-modal" class="modal">
+        <div class="modal-content">
+            <div id="upgrade-result-image-container"></div>
+            <h3 id="upgrade-result-title">Upgrade Status</h3>
+            <p id="upgrade-result-message">Details about the upgrade...</p>
+            <div class="modal-actions">
+                <button id="close-upgrade-result-modal-button" class="button">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="withdraw-modal" class="modal">
+        <div class="modal-content">
+            <h3>Withdraw Gift</h3>
+            <div class="modal-body">
+                <p>Are you sure you want to request a withdrawal for <strong id="withdraw-item-name"></strong>? An administrator will process your request shortly.</p>
+            </div>
+            <div class="modal-actions">
+                <button id="confirm-withdraw-button" class="button">Confirm</button>
+                <button id="close-withdraw-modal-button" class="button button-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="deposit-instructions-modal" class="modal">
+        <div class="modal-content">
+            <h3>Deposit TON</h3>
+            <div class="modal-body" style="text-align: left;">
+                <p>To deposit, send the <strong>exact amount</strong> of TON to the address below. You <strong>MUST</strong> include the unique comment provided.</p>
+                <div class="content-card" style="margin-bottom: 15px; padding: 15px;">
+                    <h4 style="margin-top:0; margin-bottom: 8px; color: var(--text-secondary);">Wallet Address:</h4>
+                    <p id="deposit-wallet-address" style="word-break: break-all; font-weight: 600; margin-bottom: 10px;"></p>
+                    <button id="copy-deposit-address-button" class="button button-secondary">Copy Address</button>
+                </div>
+                <div class="content-card" style="margin-bottom: 20px; padding: 15px;">
+                    <h4 style="margin-top:0; margin-bottom: 8px; color: var(--text-secondary);">Required Comment:</h4>
+                    <p id="deposit-comment-text" style="font-weight: 600; margin-bottom: 10px; font-size: 1.2em; letter-spacing: 1px;"></p>
+                    <button id="copy-deposit-comment-button" class="button button-secondary">Copy Comment</button>
+                </div>
+                <a id="ton-transfer-link" href="#" target="_blank" class="button">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12,4.5A7.5,7.5,0,0,1,19.5,12A7.5,7.5,0,0,1,12,19.5A7.5,7.5,0,0,1,4.5,12A7.5,7.5,0,0,1,12,4.5M12,2A10,10,0,0,0,2,12A10,10,0,0,0,12,22A10,10,0,0,0,22,12A10,10,0,0,0,12,2M11,17H13V15H11V17M13,13H11V7H13V13Z"/></svg>
+                    Open Wallet & Pay
+                </a>
+                <p id="deposit-expiry-info" style="text-align: center; margin-top: 15px;"></p>
+                <p id="deposit-status-message" style="text-align: center;"></p>
+                <div id="deposit-loader" class="loader" style="display:none;"></div>
+                <button id="confirm-payment-sent-button" class="button button-secondary">I Sent Funds</button>
+                <button id="cancel-deposit-button" class="button button-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="gift-deposit-modal" class="modal">
+        <div class="modal-content">
+            <h3>Депозит Подарками</h3>
+            <div class="modal-body" style="text-align: left;">
+                <p>
+                    Переведите ваш подарок на аккаунт <a href="https://t.me/SellerFrament" target="_blank" style="color: var(--primary-color); text-decoration: none;">@SellerFrament</a>.
+                    <br>Актуальные цены:
+                </p>
+                <div id="gift-prices-list" style="max-height: 40vh; overflow-y: auto; padding-right: 10px;">
+                    <div class="loader"></div>
+                </div>
+            </div>
+            <div class="modal-actions" style="margin-top: 20px;">
+                <button id="close-gift-deposit-modal-button" class="button button-secondary">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
