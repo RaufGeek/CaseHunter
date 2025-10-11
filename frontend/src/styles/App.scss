@@ -1,0 +1,154 @@
+// Import other style files
+@use "./components/Header";
+@use "./components/Navigation";
+@use "./components/LoadingScreen";
+@use "./pages/HomePage";
+@use "./pages/UpgradePage";
+@use "./pages/ReferralsPage";
+@use "./pages/LeaderboardPage";
+@use "./pages/ProfilePage";
+@use "./shared/Buttons";
+@use "./shared/Cards";
+@use "./shared/Modals";
+@use "./shared/Forms";
+
+// Import Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+// Variables
+:root {
+  --bg-gradient-start: #111111;
+  --bg-gradient-mid: #000000;
+  --bg-gradient-end: #0a0a0a;
+  --surface-color: #1a1a1a;
+  --surface-hover-color: #2c2c2c;
+  --primary-color: #ffffff;
+  --primary-gradient-start: #ffffff;
+  --primary-gradient-end: #dddddd;
+  --secondary-color: #007aff;
+  --text-primary: #f5f5f7;
+  --text-secondary: #a1a1a6;
+  --text-placeholder: #7a7f8f;
+  --text-price-color: #c7cdd6;
+  --border-color: rgba(255, 255, 255, 0.15);
+  --border-highlight: var(--primary-color);
+  --danger-color: #ff3b30;
+  --success-color: #30d158;
+  --font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  --main-border-radius: 16px;
+  --button-border-radius: 12px;
+  --soft-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+  --case-grad-default: linear-gradient(
+    145deg,
+    var(--surface-color),
+    var(--surface-hover-color)
+  );
+  --roulette-item-height: 80px;
+  --roulette-visible-items: 3;
+  --single-roulette-row-visual-height: calc(
+    var(--roulette-item-height) * var(--roulette-visible-items) + 20px
+  );
+}
+
+// Reset and base styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-family: var(--font-family);
+  background: linear-gradient(
+    160deg,
+    var(--bg-gradient-start) 0%,
+    var(--bg-gradient-mid) 50%,
+    var(--bg-gradient-end) 100%
+  );
+  color: var(--text-primary);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+// Background glow effect
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 60vw;
+  height: 60vh;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+  animation: backgroundGlow 15s ease-in-out infinite;
+}
+
+// App container
+#app-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+// Animations
+@keyframes backgroundGlow {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes pageFadeInMinimal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+// Page styles
+.page {
+  display: none;
+
+  &.active {
+    display: block;
+    animation: pageFadeInMinimal 0.3s ease-out;
+  }
+}
+
+#app-content {
+  flex-grow: 1;
+  padding: 24px 18px;
+  overflow-y: auto;
+  padding-bottom: 80px;
+}

@@ -1,0 +1,116 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  overflow-y: auto;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+
+  &.active,
+  &.open {
+    display: flex;
+    animation: modalFadeInMinimal 0.3s ease-out;
+  }
+
+  .modal-content {
+    background-color: var(--surface-color);
+    padding: 28px;
+    border-radius: var(--main-border-radius);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 1.4em;
+      font-weight: 700;
+      color: var(--text-primary);
+      flex-shrink: 0;
+    }
+
+    .modal-actions {
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+
+    .modal-body {
+      overflow-y: auto;
+      flex-grow: 1;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 12px;
+      max-height: 60vh;
+    }
+  }
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .modal-close {
+      border: 0;
+      background: transparent;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+
+  .modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .modal-dialog {
+    position: relative;
+    margin: 6vh auto 0;
+    width: min(920px, 96vw);
+    background: var(--surface-color, #0b1220);
+    color: var(--text-primary, #fff);
+    border: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    max-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
+
+@keyframes modalFadeInMinimal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
