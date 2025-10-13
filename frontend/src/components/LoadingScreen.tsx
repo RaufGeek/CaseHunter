@@ -23,7 +23,7 @@ const LoadingScreen: React.FC = () => {
   return (
     <div id="loading-screen">
       <img
-        src="https://images.casehunter.sbs/BackgroundEraser_20250831_184845312.png"
+        src="https://casehunter.sbs/images/BackgroundEraser_20250831_184845312.png"
         alt="Case Hunter Logo"
         className="loading-logo"
       />

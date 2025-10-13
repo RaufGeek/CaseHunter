@@ -15,19 +15,19 @@ const ProfilePage: React.FC = () => {
       id: 1,
       name: "Diamond Ring",
       value: 50.0,
-      image: "https://images.casehunter.sbs/DiamondRing.png",
+      image: "https://casehunter.sbs/images/DiamondRing.png",
     },
     {
       id: 2,
       name: "Crystal Ball",
       value: 100.0,
-      image: "https://images.casehunter.sbs/CrystalBall.png",
+      image: "https://casehunter.sbs/images/CrystalBall.png",
     },
     {
       id: 3,
       name: "Magic Potion",
       value: 75.0,
-      image: "https://images.casehunter.sbs/MagicPotion.png",
+      image: "https://casehunter.sbs/images/MagicPotion.png",
     },
   ]);
   const [promocode, setPromocode] = useState<string>("");
@@ -94,7 +94,7 @@ const ProfilePage: React.FC = () => {
           }}
         >
           <img
-            src="https://images.casehunter.sbs/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png"
+            src="https://casehunter.sbs/images/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png"
             alt="Star"
             className="balance-icon"
             style={{ width: "24px", height: "24px", marginRight: "8px" }}
@@ -221,7 +221,7 @@ const ProfilePage: React.FC = () => {
           >
             Продать все за <span id="sell-all-value">0</span>{" "}
             <img
-              src="https://images.casehunter.sbs/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png"
+              src="https://casehunter.sbs/images/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png"
               alt="Star"
               className="balance-icon"
               style={{ width: "16px", height: "16px" }}

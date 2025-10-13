@@ -10,17 +10,17 @@ const HomePage: React.FC = () => {
   const banners: Banner[] = [
     {
       id: 1,
-      image: "https://images.casehunter.sbs/cases.jpg",
+      image: "https://casehunter.sbs/images/cases.jpg",
       link: "#",
     },
     {
       id: 2,
-      image: "https://images.casehunter.sbs/roulete.jpg",
+      image: "https://casehunter.sbs/images/roulete.jpg",
       link: "#",
     },
     {
       id: 3,
-      image: "https://images.casehunter.sbs/battle.jpg",
+      image: "https://casehunter.sbs/images/battle.jpg",
       link: "#",
     },
   ];
@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
       id: 1,
       name: "Premium Case",
       price: 100,
-      image: "https://images.casehunter.sbs/cases.jpg",
+      image: "https://casehunter.sbs/images/cases.jpg",
       type: "regular",
     },
     {
@@ -39,7 +39,7 @@ const HomePage: React.FC = () => {
       name: "Gold Case",
       price: 250,
       image:
-        "https://images.casehunter.sbs/BackgroundEraser_20250831_184845312.png",
+        "https://casehunter.sbs/images/BackgroundEraser_20250831_184845312.png",
       type: "regular",
     },
     {
@@ -47,7 +47,7 @@ const HomePage: React.FC = () => {
       name: "Diamond Case",
       price: 500,
       image:
-        "https://images.casehunter.sbs/BackgroundEraser_20250907_222256007.png",
+        "https://casehunter.sbs/images/BackgroundEraser_20250907_222256007.png",
       type: "regular",
     },
     {
@@ -55,7 +55,7 @@ const HomePage: React.FC = () => {
       name: "Platinum Case",
       price: 750,
       image:
-        "https://images.casehunter.sbs/BackgroundEraser_20250908_000116933.png",
+        "https://casehunter.sbs/images/BackgroundEraser_20250908_000116933.png",
       type: "regular",
     },
     // Free cases
@@ -63,7 +63,7 @@ const HomePage: React.FC = () => {
       id: 5,
       name: "Free Case",
       price: 0,
-      image: "https://images.casehunter.sbs/daily_free.PNG",
+      image: "https://casehunter.sbs/images/daily_free.PNG",
       type: "free",
     },
     {
@@ -71,7 +71,7 @@ const HomePage: React.FC = () => {
       name: "Daily Gift",
       price: 0,
       image:
-        "https://images.casehunter.sbs/gifts_emoji_by_gifts_changes_bot_AgAD-IYAAsfWsEk.png",
+        "https://casehunter.sbs/images/gifts_emoji_by_gifts_changes_bot_AgAD-IYAAsfWsEk.png",
       type: "free",
     },
     // Limited cases
@@ -80,7 +80,7 @@ const HomePage: React.FC = () => {
       name: "Limited Edition",
       price: 1000,
       image:
-        "https://images.casehunter.sbs/BackgroundEraser_20250908_000155281.png",
+        "https://casehunter.sbs/images/BackgroundEraser_20250908_000155281.png",
       type: "limited",
     },
     {
@@ -88,7 +88,7 @@ const HomePage: React.FC = () => {
       name: "Exclusive Case",
       price: 1500,
       image:
-        "https://images.casehunter.sbs/BackgroundEraser_20250908_000501_222.png",
+        "https://casehunter.sbs/images/BackgroundEraser_20250908_000501_222.png",
       type: "limited",
     },
   ];
@@ -97,7 +97,7 @@ const HomePage: React.FC = () => {
     {
       id: "cases",
       title: "Кейсы",
-      image: "https://images.casehunter.sbs/cases.jpg",
+      image: "https://casehunter.sbs/images/cases.jpg",
       count: cases.filter((c) => c.type === "regular").length,
       target: "cases-modal",
       onClick: () => setIsCasesModalOpen(true),
@@ -105,21 +105,21 @@ const HomePage: React.FC = () => {
     {
       id: "roulette",
       title: "Рулетка",
-      image: "https://images.casehunter.sbs/roulete.jpg",
+      image: "https://casehunter.sbs/images/roulete.jpg",
       count: 8,
       target: "fortune-modal",
     },
     {
       id: "battle",
       title: "Battle",
-      image: "https://images.casehunter.sbs/battle.jpg",
+      image: "https://casehunter.sbs/images/battle.jpg",
       count: 3,
       target: "main-page",
     },
     {
       id: "upgrade",
       title: "Апгрейд",
-      image: "https://images.casehunter.sbs/upgrade.jpg",
+      image: "https://casehunter.sbs/images/upgrade.jpg",
       count: 3,
       target: "upgrade-page",
     },

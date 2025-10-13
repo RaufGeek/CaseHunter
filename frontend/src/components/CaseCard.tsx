@@ -9,7 +9,7 @@ const CaseCard: React.FC<CaseCardProps> = ({ caseItem, onClick }) => {
       <div className="case-name">{caseItem.name}</div>
       <div className="case-price">
         <img
-          src="https://images.casehunter.sbs/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png"
+          src="https://casehunter.sbs/images/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png"
           alt="Star"
           className="balance-icon"
         />

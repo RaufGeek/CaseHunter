@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     <header id="app-header">
       <div className="app-title-container">
         <img
-          src="https://images.casehunter.sbs/BackgroundEraser_20250831_184845312.png"
+          src="https://casehunter.sbs/images/BackgroundEraser_20250831_184845312.png"
           alt="Case Hunter Logo"
           className="app-logo"
         />
@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       <div className="wallet-info">
         <div id="balance">
           <img
-            src="https://images.casehunter.sbs/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png"
+            src="https://casehunter.sbs/images/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png"
             alt="Star"
             className="balance-icon"
           />

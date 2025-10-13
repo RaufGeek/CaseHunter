@@ -48,7 +48,7 @@ const ReferralsPage: React.FC = () => {
             <div id="referral-balance" className="value">
               {referralBalance}{" "}
               <img
-                src="https://images.casehunter.sbs/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png"
+                src="https://casehunter.sbs/images/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png"
                 className="balance-icon"
                 style={{
                   width: "1em",

@@ -31,37 +31,37 @@ const UpgradePage: React.FC = () => {
       id: 1,
       name: "Diamond Ring",
       value: 50.0,
-      image: "https://images.casehunter.sbs/DiamondRing.png",
+      image: "https://casehunter.sbs/images/DiamondRing.png",
     },
     {
       id: 2,
       name: "Crystal Ball",
       value: 100.0,
-      image: "https://images.casehunter.sbs/CrystalBall.png",
+      image: "https://casehunter.sbs/images/CrystalBall.png",
     },
     {
       id: 3,
       name: "Magic Potion",
       value: 75.0,
-      image: "https://images.casehunter.sbs/MagicPotion.png",
+      image: "https://casehunter.sbs/images/MagicPotion.png",
     },
     {
       id: 4,
       name: "Golden Rose",
       value: 125.0,
-      image: "https://images.casehunter.sbs/EternalRose.png",
+      image: "https://casehunter.sbs/images/EternalRose.png",
     },
     {
       id: 5,
       name: "Vintage Cigar",
       value: 80.0,
-      image: "https://images.casehunter.sbs/VintageCigar.png",
+      image: "https://casehunter.sbs/images/VintageCigar.png",
     },
     {
       id: 6,
       name: "Swiss Watch",
       value: 200.0,
-      image: "https://images.casehunter.sbs/SwissWatch.png",
+      image: "https://casehunter.sbs/images/SwissWatch.png",
     },
   ];
 
@@ -156,7 +156,7 @@ const UpgradePage: React.FC = () => {
           </span>
           <div id="upgrade-chance-circle-new">
             <img
-              src="https://images.casehunter.sbs/RestrictedGifts_AgADvhkAAkoFcFM.png?raw=true"
+              src="https://casehunter.sbs/images/RestrictedGifts_AgADvhkAAkoFcFM.png?raw=true"
               alt="Upgrade Mascot"
               className="upgrade-mascot-image"
             />
