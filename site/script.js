@@ -3562,7 +3562,6 @@ document.addEventListener('DOMContentLoaded', initFortune);
 //         console.log('✅ Колесо настроено:', key);
 //     }
 
-
 function initFortune() {
     const root = document.getElementById('fortune-section');
     const wrapEl = root?.querySelector('.wheel-wrap');

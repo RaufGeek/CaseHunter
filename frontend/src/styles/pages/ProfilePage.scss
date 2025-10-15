@@ -1,0 +1,91 @@
+#profile-page {
+  .profile-header {
+    text-align: center;
+    margin-bottom: 28px;
+    padding-top: 12px;
+  }
+
+  .profile-avatar-placeholder {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background-color: var(--surface-hover-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8em;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0 auto 14px auto;
+    border: 3px solid var(--border-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .profile-info {
+    .username {
+      font-size: 1.5em;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: var(--text-primary);
+    }
+
+    .userid {
+      font-size: 0.9em;
+      color: var(--text-secondary);
+    }
+  }
+
+  #profile-balance-display {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .balance-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
+
+  #sell-all-button {
+    margin-top: 18px;
+    background-color: var(--danger-color);
+    color: white;
+    background-image: none;
+    box-shadow: 0 3px 8px rgba(255, 59, 48, 0.35);
+
+    &:hover {
+      filter: brightness(1.15);
+      background-color: var(--danger-color);
+      box-shadow: 0 4px 12px rgba(255, 59, 48, 0.4);
+    }
+
+    &:active {
+      filter: brightness(0.9);
+      transform: scale(0.97);
+    }
+
+    .balance-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  #empty-inventory-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--text-placeholder);
+    padding: 15px 0;
+  }
+}

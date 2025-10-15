@@ -1,0 +1,47 @@
+#invite-page {
+  .stats-box {
+    display: flex;
+    justify-content: space-around;
+    margin: 24px 0;
+    gap: 14px;
+
+    .stat-item {
+      background-color: var(--surface-hover-color);
+      padding: 14px;
+      border-radius: var(--button-border-radius);
+      flex: 1;
+      text-align: center;
+      border: 1px solid var(--border-color);
+
+      .value {
+        font-size: 1.6em;
+        font-weight: 600;
+        color: var(--primary-color);
+
+        .balance-icon {
+          width: 1em;
+          height: 1em;
+          vertical-align: text-bottom;
+        }
+      }
+
+      .label {
+        font-size: 0.8em;
+        color: var(--text-secondary);
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .invited-users-list {
+    div {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.9em;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

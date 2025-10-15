@@ -55,3 +55,5 @@ ValueError: invalid literal for int() with base 10: '_1102715607_7947'
  * Running on http://192.168.1.100:5000
 2025-10-15 16:13:01,503 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
 2025-10-15 16:13:01,505 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 16:55:46,758 - werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Desktop\\CaseHunter2\\server\\bot.py', reloading
+2025-10-15 16:55:47,126 - werkzeug - INFO -  * Restarting with stat
