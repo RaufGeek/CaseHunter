@@ -1,0 +1,57 @@
+2025-10-14 21:39:53,470 - server - ERROR - Error getting leaderboard: invalid literal for int() with base 10: '_1102715607_7947'
+Traceback (most recent call last):
+  File "/web/CaseHunter1/server/server.py", line 325, in get_leaderboard_api
+    "user_id": int(user_id),
+ValueError: invalid literal for int() with base 10: '_1102715607_7947'
+2025-10-14 21:39:55,066 - server - ERROR - Error getting leaderboard: invalid literal for int() with base 10: '_1102715607_7947'
+Traceback (most recent call last):
+  File "/web/CaseHunter1/server/server.py", line 325, in get_leaderboard_api
+    "user_id": int(user_id),
+ValueError: invalid literal for int() with base 10: '_1102715607_7947'
+2025-10-14 21:40:07,867 - server - ERROR - Error getting leaderboard: invalid literal for int() with base 10: '_1102715607_7947'
+Traceback (most recent call last):
+  File "/web/CaseHunter1/server/server.py", line 325, in get_leaderboard_api
+    "user_id": int(user_id),
+ValueError: invalid literal for int() with base 10: '_1102715607_7947'
+2025-10-14 21:40:08,757 - server - ERROR - Error getting leaderboard: invalid literal for int() with base 10: '_1102715607_7947'
+Traceback (most recent call last):
+  File "/web/CaseHunter1/server/server.py", line 325, in get_leaderboard_api
+    "user_id": int(user_id),
+ValueError: invalid literal for int() with base 10: '_1102715607_7947'
+2025-10-14 21:40:32,552 - server - ERROR - Error getting leaderboard: invalid literal for int() with base 10: '_1102715607_7947'
+Traceback (most recent call last):
+  File "/web/CaseHunter1/server/server.py", line 325, in get_leaderboard_api
+    "user_id": int(user_id),
+ValueError: invalid literal for int() with base 10: '_1102715607_7947'
+2025-10-14 21:40:33,850 - server - ERROR - Error getting leaderboard: invalid literal for int() with base 10: '_1102715607_7947'
+Traceback (most recent call last):
+  File "/web/CaseHunter1/server/server.py", line 325, in get_leaderboard_api
+    "user_id": int(user_id),
+ValueError: invalid literal for int() with base 10: '_1102715607_7947'
+2025-10-14 21:41:25,733 - server - ERROR - Error getting leaderboard: invalid literal for int() with base 10: '_1102715607_7947'
+Traceback (most recent call last):
+  File "/web/CaseHunter1/server/server.py", line 325, in get_leaderboard_api
+    "user_id": int(user_id),
+ValueError: invalid literal for int() with base 10: '_1102715607_7947'
+2025-10-15 05:53:34,079 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:02:13,902 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:02:15,866 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:02:19,698 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:02:21,236 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:02:23,770 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:02:25,017 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:02:28,508 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:02:30,100 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:03:23,685 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:03:41,192 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:03:43,167 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:03:43,193 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:03:45,119 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:03:52,272 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 15:03:53,610 - server - ERROR - Error checking subscription: Event loop is closed
+2025-10-15 16:13:01,503 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.100:5000
+2025-10-15 16:13:01,503 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 16:13:01,505 - werkzeug - INFO -  * Restarting with stat

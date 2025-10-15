@@ -1,0 +1,228 @@
+650053552 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5442, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7292881411 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5443, 'image': 'https://casehunter.sbs/images/Rose.png'}
+1289858942 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5444, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7529368297 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5445, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8132300075 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5446, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8132300075 | all_in_01 | [{'name': 'Rocket', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5447, 'img_url': 'https://casehunter.sbs/images/Rocket.png'}]
+8132300075 | all_in_01 | [{'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5448, 'img_url': 'https://casehunter.sbs/images/Bear.png'}]
+1012326259 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5449, 'image': 'https://casehunter.sbs/images/Bear.png'}
+568012249 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5450, 'image': 'https://casehunter.sbs/images/Rose.png'}
+1275756969 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5451, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6071606655 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5452, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1275756969 | all_in_01 | [{'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25, 'id': 5453, 'img_url': 'https://casehunter.sbs/images/Rose.png'}]
+6817435288 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5454, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6529588448 | small_billionaire_05 | [{'name': 'Heroic Helmet (random)', 'is_emoji_gift': False, 'stars_price': 47000, 'id': 5455, 'img_url': 'https://casehunter.sbs/images/HeroicHelmetBlackThorn.png'}, {'name': 'Heroic Helmet (random)', 'is_emoji_gift': False, 'stars_price': 47000, 'id': 5456, 'img_url': 'https://casehunter.sbs/images/HeroicHelmetBlackThorn.png'}, {'name': 'Heroic Helmet (random)', 'is_emoji_gift': False, 'stars_price': 47000, 'id': 5457, 'img_url': 'https://casehunter.sbs/images/HeroicHelmetBlackThorn.png'}]
+6529588448 | recordplayer | [{'name': 'Record Player Misfits (random)', 'is_emoji_gift': False, 'stars_price': 15, 'id': 5458, 'img_url': 'https://casehunter.sbs/images/RecordPlayerMisfits.png'}, {'name': 'Record Player Misfits (random)', 'is_emoji_gift': False, 'stars_price': 15, 'id': 5459, 'img_url': 'https://casehunter.sbs/images/RecordPlayerMisfits.png'}, {'name': 'Record Player Misfits (random)', 'is_emoji_gift': False, 'stars_price': 15, 'id': 5460, 'img_url': 'https://casehunter.sbs/images/RecordPlayerMisfits.png'}]
+7561670832 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5461, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5678812635 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5462, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6480252477 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5463, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8480958951 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5464, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7350682067 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5465, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6213535222 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5466, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7031061279 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5467, 'image': 'https://casehunter.sbs/images/Rose.png'}
+8054220180 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5468, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6390633379 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5469, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7877014796 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5470, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6236156263 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5471, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5288881372 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5472, 'image': 'https://casehunter.sbs/images/Rose.png'}
+1388786584 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5473, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7236203082 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5474, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6529588448 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5475, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6854079359 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5476, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8247015083 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5477, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1328064133 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5478, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7762138086 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5479, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7762138086 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5480, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+7645082286 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5481, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1947287067 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5482, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7988680591 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5483, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1252174759 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5484, 'image': 'https://casehunter.sbs/images/Rose.png'}
+1356721873 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5485, 'image': 'https://casehunter.sbs/images/Bear.png'}
+2022822876 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5486, 'image': 'https://casehunter.sbs/images/Rose.png'}
+5579764553 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5487, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7950317968 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5488, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5515574634 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5489, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7749106857 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5490, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8073623033 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5491, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7363694913 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5492, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5522165695 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5493, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7267218215 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5494, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8309626292 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5495, 'image': 'https://casehunter.sbs/images/Rose.png'}
+8371083774 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5496, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7087739704 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5497, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7018651071 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5498, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6575711284 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5499, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6664177013 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5500, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6664177013 | all_in_01 | [{'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25, 'id': 5501, 'img_url': 'https://casehunter.sbs/images/Rose.png'}]
+8075079211 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5502, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8092876381 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5503, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7948887146 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5504, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7948887146 | all_in_01 | [{'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5505, 'img_url': 'https://casehunter.sbs/images/Bear.png'}]
+6747656254 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5506, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6747656254 | all_in_01 | [{'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5507, 'img_url': 'https://casehunter.sbs/images/Bear.png'}]
+6480488820 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5508, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6480488820 | all_in_01 | [{'name': 'Bottle', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5509, 'img_url': 'https://casehunter.sbs/images/Bottle.png'}]
+7493914746 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5510, 'image': 'https://casehunter.sbs/images/Rose.png'}
+5127728109 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5511, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6558819021 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5512, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6875349960 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5513, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7661184204 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5514, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7359476621 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5515, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7359476621 | all_in_01 | [{'name': 'Rocket', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5516, 'img_url': 'https://casehunter.sbs/images/Rocket.png'}]
+7359476621 | all_in_01 | [{'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25, 'id': 5517, 'img_url': 'https://casehunter.sbs/images/Rose.png'}]
+6090453162 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5518, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5591927464 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5519, 'image': 'https://casehunter.sbs/images/Rose.png'}
+5591927464 | all_in_01 | [{'name': 'Ring', 'is_emoji_gift': True, 'stars_price': 100, 'id': 5520, 'img_url': 'https://casehunter.sbs/images/Ring.png'}]
+7988680591 | small_billionaire_05 | [{'name': 'Rocket', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5521, 'img_url': 'https://casehunter.sbs/images/Rocket.png'}]
+7988680591 | all_in_01 | [{'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5522, 'img_url': 'https://casehunter.sbs/images/Bear.png'}]
+7988680591 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5523, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+7988680591 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5524, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+5591927464 | small_billionaire_05 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5525, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+5591927464 | all_in_01 | [{'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25, 'id': 5526, 'img_url': 'https://casehunter.sbs/images/Rose.png'}]
+5261461356 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5527, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7246538598 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5528, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7246538598 | all_in_01 | [{'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5529, 'img_url': 'https://casehunter.sbs/images/Bear.png'}]
+1289858942 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5530, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7292881411 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5531, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7292881411 | all_in_01 | [{'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5532, 'img_url': 'https://casehunter.sbs/images/Bear.png'}]
+568012249 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5533, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1275756969 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5534, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5678812635 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5535, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7561670832 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5536, 'image': 'https://casehunter.sbs/images/Rose.png'}
+8480958951 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5537, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6529588448 | vintagecigar | [{'name': 'Vintage Cigar Psychonaut', 'is_emoji_gift': False, 'stars_price': 5000, 'id': 5538, 'img_url': 'https://casehunter.sbs/images/VintageCigarPsychonaut.png'}]
+1192931685 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5539, 'image': 'https://casehunter.sbs/images/Rose.png'}
+1192931685 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5540, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+7332935357 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5542, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5678812635 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5543, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5288881372 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5544, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6236156263 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5545, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6090453162 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5546, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6155165856 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5547, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6155165856 | all_in_01 | [{'name': 'Bottle', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5548, 'img_url': 'https://casehunter.sbs/images/Bottle.png'}]
+8056699553 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5549, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6575711284 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5550, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7363694913 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5551, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6071606655 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5552, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1947287067 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5553, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7267218215 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5554, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7493914746 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5555, 'image': 'https://casehunter.sbs/images/Rose.png'}
+8309626292 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5556, 'image': 'https://casehunter.sbs/images/Rose.png'}
+8371083774 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5557, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7950317968 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5558, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1324202505 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5559, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7087739704 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5560, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7031061279 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5561, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7018651071 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5562, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5467794999 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5563, 'image': 'https://casehunter.sbs/images/Rose.png'}
+5467794999 | all_in_01 | [{'name': 'Bottle', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5564, 'img_url': 'https://casehunter.sbs/images/Bottle.png'}]
+5467794999 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5565, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+1012326259 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5566, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6817435288 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5567, 'image': 'https://casehunter.sbs/images/Rose.png'}
+1012326259 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5568, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+1012326259 | all_in_01 | [{'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5569, 'img_url': 'https://casehunter.sbs/images/Bear.png'}]
+6213535222 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5570, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7350682067 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5571, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6229940716 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5572, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7529368297 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5573, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8132300075 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5574, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6230529491 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5575, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7506804446 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5576, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7685663670 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5577, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7685663670 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5578, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+7685663670 | all_in_01 | [{'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5579, 'img_url': 'https://casehunter.sbs/images/Bear.png'}, {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25, 'id': 5580, 'img_url': 'https://casehunter.sbs/images/Rose.png'}]
+1252174759 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5581, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8092876381 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5582, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1289858942 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5583, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8054220180 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5584, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5579764553 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5585, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7138761782 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5586, 'image': 'https://casehunter.sbs/images/Bear.png'}
+409753017 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5587, 'image': 'https://casehunter.sbs/images/Bear.png'}
+409753017 | all_in_01 | [{'name': 'Bottle', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5588, 'img_url': 'https://casehunter.sbs/images/Bottle.png'}]
+7762138086 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5589, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8239239290 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5590, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7645082286 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5591, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6048450367 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5592, 'image': 'https://casehunter.sbs/images/Bear.png'}
+796497571 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5593, 'image': 'https://casehunter.sbs/images/Rose.png'}
+568012249 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5594, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6480252477 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5595, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1475405155 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5596, 'image': 'https://casehunter.sbs/images/Rose.png'}
+971857460 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5597, 'image': 'https://casehunter.sbs/images/Rose.png'}
+971857460 | all_in_01 | [{'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5598, 'img_url': 'https://casehunter.sbs/images/Bear.png'}]
+1405960646 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5599, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6533915508 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5600, 'image': 'https://casehunter.sbs/images/Rose.png'}
+5801877127 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5601, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6529588448 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5602, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6529588448 | mens_collection | [{'name': 'Low Rider Telegram Bus (random)', 'is_emoji_gift': False, 'stars_price': 15, 'id': 5604, 'img_url': 'https://casehunter.sbs/images/LowRiderTelegramBus.png'}]
+6887838404 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5605, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6747656254 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5606, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6747656254 | all_in_01 | [{'name': 'Rocket', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5607, 'img_url': 'https://casehunter.sbs/images/Rocket.png'}]
+6747656254 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5608, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+1275756969 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5609, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7699485635 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5610, 'image': 'https://casehunter.sbs/images/Rose.png'}
+1445662861 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5611, 'image': 'https://casehunter.sbs/images/Rose.png'}
+1328064133 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5612, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5261461356 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5613, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7561670832 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5614, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5678812635 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5615, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6480488820 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5616, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5288881372 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5617, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1947287067 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5618, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6090453162 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5619, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6090453162 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5620, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+7236203082 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5621, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6529588448 | vintagecigar | [{'name': 'Vintage Cigar Psychonaut', 'is_emoji_gift': False, 'stars_price': 5000, 'id': 5622, 'img_url': 'https://casehunter.sbs/images/VintageCigarPsychonaut.png'}]
+1388786584 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5623, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5579764553 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5624, 'image': 'https://casehunter.sbs/images/Bear.png'}
+409753017 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5625, 'image': 'https://casehunter.sbs/images/Bear.png'}
+650053552 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5626, 'image': 'https://casehunter.sbs/images/Rose.png'}
+5089872457 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5627, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7363694913 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5628, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7267218215 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5629, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8309626292 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5630, 'image': 'https://casehunter.sbs/images/Rose.png'}
+8371083774 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5631, 'image': 'https://casehunter.sbs/images/Bear.png'}
+5579605225 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5632, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7018651071 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5633, 'image': 'https://casehunter.sbs/images/Bear.png'}
+2145256184 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5634, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6548594957 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5635, 'image': 'https://casehunter.sbs/images/Rose.png'}
+1435834999 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5636, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1435834999 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5637, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+2022822876 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5638, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7824438739 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5639, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6791515050 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5640, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6048450367 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5641, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6071606655 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5642, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6071606655 | all_in_01 | [{'name': 'Rocket', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5643, 'img_url': 'https://casehunter.sbs/images/Rocket.png'}]
+6071606655 | all_in_01 | [{'name': 'Bottle', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5644, 'img_url': 'https://casehunter.sbs/images/Bottle.png'}]
+6071606655 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5645, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+6480252477 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5646, 'image': 'https://casehunter.sbs/images/Rose.png'}
+6480252477 | all_in_01 | [{'name': 'Rocket', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5647, 'img_url': 'https://casehunter.sbs/images/Rocket.png'}]
+6480252477 | all_in_01 | [{'name': 'Rocket', 'is_emoji_gift': True, 'stars_price': 50, 'id': 5648, 'img_url': 'https://casehunter.sbs/images/Rocket.png'}]
+6480252477 | all_in_01 | [{'name': 'Heart', 'is_emoji_gift': True, 'stars_price': 15, 'id': 5649, 'img_url': 'https://casehunter.sbs/images/Heart.png'}]
+1012326259 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5650, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8239239290 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5651, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8092876381 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5652, 'image': 'https://casehunter.sbs/images/Rose.png'}
+5055946717 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5653, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7506804446 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5654, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7493914746 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5655, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7332935357 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5656, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6213535222 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5657, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6529588448 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5658, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1289858942 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5659, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1275756969 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5660, 'image': 'https://casehunter.sbs/images/Rose.png'}
+1445662861 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5661, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6155165856 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5662, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1475405155 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5663, 'image': 'https://casehunter.sbs/images/Bear.png'}
+6236156263 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5664, 'image': 'https://casehunter.sbs/images/Rose.png'}
+2025407759 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5665, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7950317968 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5666, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1947287067 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5667, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7529368297 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5668, 'image': 'https://casehunter.sbs/images/Bear.png'}
+8132300075 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5669, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1947287067 | all_in_01 | [{'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25, 'id': 5670, 'img_url': 'https://casehunter.sbs/images/Rose.png'}]
+6529588448 | rick_and_morty_case | [{'name': 'Genie Lamp (random)', 'is_emoji_gift': False, 'stars_price': 11500, 'id': 5671, 'img_url': 'https://casehunter.sbs/images/GenieLampStarDust.png'}]
+2109144190 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5672, 'image': 'https://casehunter.sbs/images/Bear.png'}
+1405960646 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5673, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7468509951 | Фри кейс | {'name': 'Rose', 'is_emoji_gift': True, 'stars_price': 25.0, 'id': 5674, 'image': 'https://casehunter.sbs/images/Rose.png'}
+7441408067 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5675, 'image': 'https://casehunter.sbs/images/Bear.png'}
+7350682067 | Фри кейс | {'name': 'Bear', 'is_emoji_gift': True, 'stars_price': 15.0, 'id': 5676, 'image': 'https://casehunter.sbs/images/Bear.png'}
