@@ -60,6 +60,8 @@
 
 html {
   -webkit-overflow-scrolling: touch;
+  overflow: hidden; /* Убираем скролл с html */
+  height: 100vh; /* Фиксируем высоту */
 }
 
 body {
@@ -71,10 +73,8 @@ body {
     var(--bg-gradient-end) 100%
   );
   color: var(--text-primary);
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  overflow: hidden; /* Убираем все скроллы с body */
+  height: 100vh; /* Фиксируем высоту */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
@@ -106,7 +106,8 @@ body::before {
 #app-container {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  height: 100vh;
+  overflow: hidden;
 }
 
 // Animations
@@ -138,17 +139,15 @@ body::before {
 
 // Page styles
 .page {
-  display: none;
-
-  &.active {
-    display: block;
-    animation: pageFadeInMinimal 0.3s ease-out;
-  }
+  display: block;
+  animation: pageFadeInMinimal 0.3s ease-out;
 }
 
 #app-content {
-  flex-grow: 1;
+  flex: 1;
   padding: 24px 18px;
   overflow-y: auto;
+  overflow-x: hidden;
   padding-bottom: 80px;
+  min-height: 0; /* Это важно для правильной работы flex */
 }

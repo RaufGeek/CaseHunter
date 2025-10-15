@@ -1,11 +1,23 @@
 import { useState } from "react";
 import CaseCard from "@components/CaseCard";
 import CasesModal from "@components/CasesModal";
+import FortuneWheel from "@components/FortuneWheel";
+import RouletteModal from "@components/RouletteModal";
+import ResultModal from "@components/ResultModal";
+import Toast from "@components/Toast";
 import { Banner, Case, GameFeature } from "@/types";
 
 const HomePage: React.FC = () => {
   const [bannerIndex, setBannerIndex] = useState(0);
   const [isCasesModalOpen, setIsCasesModalOpen] = useState(false);
+  const [isFortuneWheelOpen, setIsFortuneWheelOpen] = useState(false);
+  const [isRouletteModalOpen, setIsRouletteModalOpen] = useState(false);
+  const [isResultModalOpen, setIsResultModalOpen] = useState(false);
+  const [toast, setToast] = useState<{
+    message: string;
+    type: "success" | "error" | "info";
+  } | null>(null);
+  const [balance] = useState(1250);
 
   const banners: Banner[] = [
     {
@@ -108,6 +120,7 @@ const HomePage: React.FC = () => {
       image: "https://casehunter.sbs/images/roulete.jpg",
       count: 8,
       target: "fortune-modal",
+      onClick: () => setIsFortuneWheelOpen(true),
     },
     {
       id: "battle",
@@ -209,6 +222,52 @@ const HomePage: React.FC = () => {
         onClose={() => setIsCasesModalOpen(false)}
         cases={cases.filter((c) => c.type === "regular")}
       />
+
+      {/* Fortune Wheel Modal */}
+      <FortuneWheel
+        isOpen={isFortuneWheelOpen}
+        onClose={() => setIsFortuneWheelOpen(false)}
+      />
+
+      {/* Roulette Modal */}
+      <RouletteModal
+        isOpen={isRouletteModalOpen}
+        onClose={() => setIsRouletteModalOpen(false)}
+        caseName="Premium Case"
+        balance={balance}
+        onSpin={(multiplier) => {
+          console.log(`Spinning with multiplier: ${multiplier}`);
+          // Handle spin logic here
+        }}
+      />
+
+      {/* Result Modal */}
+      <ResultModal
+        isOpen={isResultModalOpen}
+        onClose={() => setIsResultModalOpen(false)}
+        title="Ваш выигрыш"
+        image="https://casehunter.sbs/images/DMJTGStarsEmoji_AgADZxIAAjoUmVI.png"
+        name="Star"
+        subtitle="Поздравляем!"
+        onClaim={() => {
+          setToast({ message: "Выигрыш получен!", type: "success" });
+          setIsResultModalOpen(false);
+        }}
+        onSell={() => {
+          setToast({ message: "Предмет продан!", type: "info" });
+          setIsResultModalOpen(false);
+        }}
+        showSellButton={true}
+      />
+
+      {/* Toast Notification */}
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          onClose={() => setToast(null)}
+        />
+      )}
     </div>
   );
 };

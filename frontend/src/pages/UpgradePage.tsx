@@ -1,5 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import InventoryItem from "@components/InventoryItem";
+import ResultModal from "@components/ResultModal";
+import Toast from "@components/Toast";
+import PlusIcon from "../components/icons/PlusIcon";
+import ArrowRightIcon from "../components/icons/ArrowRightIcon";
 import { InventoryItem as InventoryItemType } from "@/types";
 
 const UpgradePage: React.FC = () => {
@@ -11,6 +15,18 @@ const UpgradePage: React.FC = () => {
   );
   const [showPicker, setShowPicker] = useState<boolean>(false);
   const [pickerType, setPickerType] = useState<string>("");
+  const [isUpgrading, setIsUpgrading] = useState(false);
+  const [upgradeResult, setUpgradeResult] = useState<{
+    isOpen: boolean;
+    success: boolean;
+    item: InventoryItemType | null;
+  }>({ isOpen: false, success: false, item: null });
+  const [toast, setToast] = useState<{
+    message: string;
+    type: "success" | "error" | "info";
+  } | null>(null);
+  const [chance, setChance] = useState(0);
+  const [multiplier, setMultiplier] = useState(0);
 
   const handleSlotClick = (type: string): void => {
     setPickerType(type);
@@ -24,6 +40,52 @@ const UpgradePage: React.FC = () => {
       setDesiredItem(item);
     }
     setShowPicker(false);
+  };
+
+  // Calculate upgrade chance and multiplier
+  useEffect(() => {
+    if (selectedItem && desiredItem) {
+      const valueRatio = selectedItem.value / desiredItem.value;
+      const calculatedChance = Math.min(Math.max(valueRatio * 100, 5), 95); // 5-95% range
+      const calculatedMultiplier = Math.max(
+        1,
+        Math.floor(desiredItem.value / selectedItem.value)
+      );
+
+      setChance(Math.round(calculatedChance));
+      setMultiplier(calculatedMultiplier);
+    } else {
+      setChance(0);
+      setMultiplier(0);
+    }
+  }, [selectedItem, desiredItem]);
+
+  const handleUpgrade = async () => {
+    if (!selectedItem || !desiredItem || isUpgrading) return;
+
+    setIsUpgrading(true);
+
+    // Simulate upgrade process
+    setTimeout(() => {
+      const isSuccess = Math.random() * 100 < chance;
+
+      setUpgradeResult({
+        isOpen: true,
+        success: isSuccess,
+        item: isSuccess ? desiredItem : selectedItem,
+      });
+
+      setIsUpgrading(false);
+    }, 3000);
+  };
+
+  const handleUpgradeResult = () => {
+    if (upgradeResult.success) {
+      setToast({ message: "Апгрейд успешен!", type: "success" });
+    } else {
+      setToast({ message: "Апгрейд не удался", type: "error" });
+    }
+    setUpgradeResult({ isOpen: false, success: false, item: null });
   };
 
   const mockInventoryItems: InventoryItemType[] = [
@@ -85,21 +147,14 @@ const UpgradePage: React.FC = () => {
               </div>
             ) : (
               <div className="slot-placeholder">
-                <svg className="plus-icon" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
-                  />
-                </svg>
+                <PlusIcon className="plus-icon" />
                 <span>Выберите ваш предмет</span>
               </div>
             )}
           </div>
 
           <div className="upgrade-arrow-connector">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
-            </svg>
+            <ArrowRightIcon />
           </div>
 
           <div
@@ -116,12 +171,7 @@ const UpgradePage: React.FC = () => {
               </div>
             ) : (
               <div className="slot-placeholder">
-                <svg className="plus-icon" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
-                  />
-                </svg>
+                <PlusIcon className="plus-icon" />
                 <span>Выберите желаемый NFT</span>
               </div>
             )}
@@ -152,34 +202,76 @@ const UpgradePage: React.FC = () => {
 
         <div id="upgrade-chance-display-container-new">
           <span id="upgrade-chance-text-left" className="chance-display-text">
-            0%
+            {chance}%
           </span>
-          <div id="upgrade-chance-circle-new">
+          <div
+            id="upgrade-chance-circle-new"
+            style={{
+              background: `conic-gradient(
+                var(--primary-color) 0deg ${chance * 3.6}deg,
+                var(--danger-color) ${chance * 3.6}deg 360deg
+              )`,
+            }}
+          >
             <img
               src="https://casehunter.sbs/images/RestrictedGifts_AgADvhkAAkoFcFM.png?raw=true"
               alt="Upgrade Mascot"
               className="upgrade-mascot-image"
             />
-            <div id="upgrade-chance-pointer-new"></div>
+            <div
+              id="upgrade-chance-pointer-new"
+              style={{
+                transform: `translateX(-50%) rotate(${chance * 3.6}deg)`,
+              }}
+            ></div>
           </div>
           <span
             id="upgrade-multiplier-text-right"
             className="chance-display-text"
           >
-            0x
+            {multiplier}x
           </span>
         </div>
 
         <button
           id="do-upgrade-button"
           className="button"
-          disabled={!selectedItem || !desiredItem}
+          disabled={!selectedItem || !desiredItem || isUpgrading}
+          onClick={handleUpgrade}
         >
-          {!selectedItem || !desiredItem
+          {isUpgrading
+            ? "Апгрейд в процессе..."
+            : !selectedItem || !desiredItem
             ? "Выберете предмет для апгрейда"
             : "Выполнить апгрейд"}
         </button>
       </div>
+
+      {/* Upgrade Result Modal */}
+      {upgradeResult.isOpen && upgradeResult.item && (
+        <ResultModal
+          isOpen={upgradeResult.isOpen}
+          onClose={handleUpgradeResult}
+          title={
+            upgradeResult.success ? "Апгрейд успешен!" : "Апгрейд не удался"
+          }
+          image={upgradeResult.item.image}
+          name={upgradeResult.item.name}
+          subtitle={
+            upgradeResult.success ? "Поздравляем!" : "Попробуйте еще раз"
+          }
+          onClaim={handleUpgradeResult}
+        />
+      )}
+
+      {/* Toast Notification */}
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          onClose={() => setToast(null)}
+        />
+      )}
     </div>
   );
 };

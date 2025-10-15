@@ -1,0 +1,245 @@
+/* Roulette Modal Styles */
+#roulette-wheel-container {
+  width: 100%;
+  flex-shrink: 0;
+  height: var(--single-roulette-row-visual-height);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--main-border-radius);
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+
+.roulette-individual-reel-row-visual {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--surface-hover-color);
+  border-radius: var(--button-border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: none;
+}
+
+.roulette-individual-reel-row-visual.active {
+  display: block;
+}
+
+.roulette-individual-reel-row-visual::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 3px;
+  background-color: #ffffff;
+  opacity: 0.9;
+  transform: translateY(-50%);
+  z-index: 2;
+  pointer-events: none;
+  border-radius: 2px;
+}
+
+.roulette-spinner-reel {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+}
+
+.roulette-item {
+  height: var(--roulette-item-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: opacity 0.3s;
+}
+
+.roulette-item img {
+  max-width: 90%;
+  max-height: calc(var(--roulette-item-height) - 10px);
+  object-fit: contain;
+}
+
+.case-multiplier-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.case-multiplier-selector button {
+  width: auto;
+  flex-grow: 1;
+  padding: 10px 15px;
+  font-size: 0.9em;
+}
+
+.active-multiplier {
+  background-color: var(--primary-color) !important;
+  color: #000000 !important;
+}
+
+#possible-prizes-display {
+  padding-right: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 12px;
+  flex-shrink: 0;
+  margin-top: 12px;
+}
+
+.prize-card {
+  background-color: var(--surface-hover-color);
+  border-radius: var(--button-border-radius);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  min-height: 110px;
+}
+
+.prize-card-image-placeholder {
+  width: 55px;
+  height: 55px;
+  background-color: transparent;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.prize-card-image-placeholder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.prize-card-name {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--text-secondary);
+  line-height: 1.25;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.prize-card-price {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000000;
+  font-size: 0.7em;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+/* Modal header styles */
+#roulette-modal .modal-header {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 12px 16px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#roulette-modal .modal-header h3 {
+  margin: 0 !important;
+  font-weight: 800;
+  font-size: clamp(16px, 2.6vw, 19px);
+  line-height: 1.15;
+  white-space: normal;
+  overflow: visible;
+  word-break: keep-all;
+  hyphens: auto;
+}
+
+#roulette-modal-balance-display {
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 4px 18px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  white-space: nowrap;
+  transform: translateY(1px);
+}
+
+#roulette-modal-balance-display .balance-label {
+  font-size: 11px;
+  opacity: 0.75;
+  letter-spacing: 0.25px;
+  margin-right: 2px;
+}
+
+#roulette-modal-balance-display .balance-value-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1;
+}
+
+#roulette-modal-balance-display .balance-icon {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 360px) {
+  #roulette-modal .modal-header {
+    gap: 6px 8px;
+    padding: 10px 12px;
+  }
+
+  #roulette-modal-balance-display {
+    padding: 3px 8px;
+  }
+
+  #roulette-modal-balance-display .balance-value-line {
+    font-size: 13px;
+  }
+
+  #roulette-modal-balance-display .balance-icon {
+    width: 12px;
+    height: 12px;
+  }
+}

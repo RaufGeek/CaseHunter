@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import InventoryItem from "@components/InventoryItem";
+import DepositModal from "@components/DepositModal";
+import Toast from "@components/Toast";
 import { UserData, InventoryItem as InventoryItemType } from "@/types";
 
 const ProfilePage: React.FC = () => {
@@ -31,6 +33,14 @@ const ProfilePage: React.FC = () => {
     },
   ]);
   const [promocode, setPromocode] = useState<string>("");
+  const [depositModal, setDepositModal] = useState<{
+    isOpen: boolean;
+    type: "ton" | "stars" | "gifts";
+  }>({ isOpen: false, type: "stars" });
+  const [toast, setToast] = useState<{
+    message: string;
+    type: "success" | "error" | "info";
+  } | null>(null);
 
   useEffect(() => {
     // Simulate loading user data
@@ -43,13 +53,19 @@ const ProfilePage: React.FC = () => {
   }, []);
 
   const handleDepositStars = () => {
-    // Handle deposit stars logic
-    console.log("Deposit stars clicked");
+    setDepositModal({ isOpen: true, type: "stars" });
   };
 
   const handleDepositGifts = () => {
-    // Handle deposit gifts logic
-    console.log("Deposit gifts clicked");
+    setDepositModal({ isOpen: true, type: "gifts" });
+  };
+
+  const handleDeposit = (amount: number, type: string) => {
+    console.log(`Deposit ${amount} ${type}`);
+    setToast({
+      message: `Депозит ${amount} ${type} обработан!`,
+      type: "success",
+    });
   };
 
   const handleRedeemPromocode = () => {
@@ -229,6 +245,23 @@ const ProfilePage: React.FC = () => {
           </button>
         )}
       </div>
+
+      {/* Deposit Modal */}
+      <DepositModal
+        isOpen={depositModal.isOpen}
+        onClose={() => setDepositModal({ isOpen: false, type: "stars" })}
+        type={depositModal.type}
+        onDeposit={handleDeposit}
+      />
+
+      {/* Toast Notification */}
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          onClose={() => setToast(null)}
+        />
+      )}
     </div>
   );
 };

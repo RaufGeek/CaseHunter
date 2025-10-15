@@ -1,0 +1,152 @@
+/* Deposit Modal Styles */
+#deposit-instructions-modal .modal-body p {
+  color: var(--text-secondary);
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+#deposit-instructions-modal .modal-body strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+#deposit-instructions-modal #ton-transfer-link {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#deposit-instructions-modal #ton-transfer-link svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+#deposit-status-message,
+#deposit-expiry-info {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+/* Gift prices list */
+#gift-prices-list {
+  max-height: 40vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin: 15px 0;
+}
+
+.gift-price-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  background-color: var(--surface-hover-color);
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.gift-emoji {
+  font-size: 24px;
+  margin-right: 12px;
+}
+
+.gift-name {
+  flex: 1;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.gift-stars {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Content cards in deposit modal */
+#deposit-instructions-modal .content-card {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--main-border-radius);
+}
+
+#deposit-instructions-modal .content-card h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+  font-size: 0.9em;
+}
+
+#deposit-instructions-modal .content-card p {
+  word-break: break-all;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+/* Input styles for stars deposit */
+#deposit-instructions-modal input[type="number"] {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 14px;
+  border-radius: var(--button-border-radius);
+  background-color: var(--surface-hover-color);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  font-size: 1em;
+  font-weight: 500;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#deposit-instructions-modal input[type="number"]:focus {
+  outline: none;
+  border-color: var(--border-highlight);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+#deposit-instructions-modal input[type="number"]::placeholder {
+  color: var(--text-placeholder);
+}
+
+/* Modal actions */
+#deposit-instructions-modal .modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+#deposit-instructions-modal .modal-actions .button {
+  width: 100%;
+}
+
+/* Loading state */
+#deposit-instructions-modal .loader {
+  border: 4px solid var(--surface-hover-color);
+  border-top: 4px solid var(--primary-color);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 1s linear infinite;
+  margin: 22px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
