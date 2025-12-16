@@ -20,11 +20,7 @@ from aiogram.types import (
 from aiogram.enums import ParseMode
 
 # --- Конфигурация ---
-REQUIRED_CHANNELS = []  # Пример: ['@mychannel1', '@mychannel2']
-PAYMENT_CHANNEL_ID = -1002877071994
-ADMIN_USER_IDS = [6529588448, 5146625949, 8116972271, 6533915508]
-WEBAPP_URL = "https://t.me/Hunter_Case_bot/app"
-BOT_TOKEN = '8472036554:AAF7MXqAkyrZFHA2AMCkMsCDYqqCLRKUUZI'
+
 #BOT_TOKEN = '8472036554:AAGKA_gE7YdTbGRPyAJ69_cVRsY3xIbaseU'
 #BOT_TOKEN = '8385199809:AAE1ugqHas6Pc4SOETt291JZfREldGjuHqI'
 
