@@ -30,12 +30,7 @@ from telebot import TeleBot
 
 load_dotenv()
 
-podkrut_ids = [6529588448]
-ADMIN_USER_IDS = [6529588448, 5146625949, 8116972271, 6533915508]  # Список админов для исключения из лидерборда
-BOT_TOKEN = '8472036554:AAF7MXqAkyrZFHA2AMCkMsCDYqqCLRKUUZI'
-#BOT_TOKEN = '8472036554:AAGKA_gE7YdTbGRPyAJ69_cVRsY3xIbaseU'
-#BOT_TOKEN = '8385199809:AAE1ugqHas6Pc4SOETt291JZfREldGjuHqI'
-payment_channel_id = -1002877071994
+
 AUTH_DATE_MAX_AGE_SECONDS = 3600 * 24
 TONNEL_SENDER_INIT_DATA = os.environ.get("TONNEL_SENDER_INIT_DATA")
 TONNEL_GIFT_SECRET = os.environ.get("TONNEL_GIFT_SECRET", "yowtfisthispieceofshitiiit")
